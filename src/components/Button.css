@@ -1,0 +1,64 @@
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #000; /* farba rámčeka - čierna */
+    pointer-events: none; /* zabráni interakcii s vrstvou */
+    box-sizing: border-box;
+}
+
+.btn--outline::before {
+    border-color: #fff; /* farba rámčeka - biela pre btn--outline */
+}
+
+.btn--test::before {
+    border-style: dashed; /* iný štýl rámčeka pre btn--test */
+}
+
+.btn--primary {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8); /* priesvitný text - biela s 80% priesvitnosti */
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* farba pozadia pre btn--outline na hover */
+        color: #000; /* farba textu pre btn--outline na hover */
+    }
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: #000; /* farba textu pre btn--outline */
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* farba pozadia pre btn--outline na hover */
+        color: #fff; /* farba textu pre btn--outline na hover */
+    }
+}
+
+.btn--test {
+    background-color: transparent;
+    color: #fff; /* farba textu pre btn--test */
+}
+
+
+
+/* Môžete pridať ďalšie štýly pre veľkosť tlačidla, ak je to potrebné */
+.btn--medium {
+    padding: 12px 20px;
+    font-size: 18px;
+}
+
+.btn--large {
+    padding: 16px 26px;
+    font-size: 20px;
+}

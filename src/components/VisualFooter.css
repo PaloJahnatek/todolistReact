@@ -1,0 +1,134 @@
+/* Základné štýly */
+
+.visual-footer-container {
+    background-color: #000;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+    color: #fff;
+    /*z-index: 999; !* Prekryje všetko ostatné na stránke *!*/
+}
+
+
+.visual-footer-subscription {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-footer-subscription h1 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.social-media {
+    width: 100%;
+}
+
+.social-media-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto 0;
+}
+
+.visual-footer-logo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.home-logo {
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 15px;
+    /*font-weight: bold;*/
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.web-rights {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+
+.web-rights a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.visual-footer-logo a:hover {
+    color: #7474d2; /* Zmena farby na hover */
+}
+
+/* Štýly pre max-width: 820px */
+
+@media screen and (max-width: 820px) {
+    .visual-footer-container {
+        height: 15%;
+        padding: 10px;
+    }
+
+    .visual-footer-subscription h1 {
+        font-size: 1.2rem;
+    }
+
+    .visual-footer-logo {
+        font-size: 1.2rem;
+        margin-bottom: -0.5rem;
+    }
+
+    .web-rights {
+        margin-bottom: 4.1rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* Štýly pre max-width: 768px */
+
+@media screen and (max-width: 768px) {
+    .visual-footer-container {
+        height: 15%;
+        padding: 10px;
+    }
+
+
+    .visual-footer-subscription h1 {
+        font-size: 1rem;
+    }
+
+
+    .visual-footer-logo {
+        color: #fff;
+        justify-self: start;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: -0.5rem;
+    }
+
+    .web-rights {
+        margin-bottom: 5rem;
+        font-size: 0.7rem;
+    }
+}
